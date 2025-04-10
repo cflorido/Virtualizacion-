@@ -3,9 +3,6 @@ FROM python:3.10-slim
 # Instala Jupyter
 RUN pip install --no-cache-dir notebook
 
-# Instala las librerías necesarias
-RUN pip install --no-cache-dir numpy pandas matplotlib seaborn scikit-learn
-
 # Crea directorio de trabajo
 WORKDIR /app
 
